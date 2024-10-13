@@ -1,0 +1,84 @@
+Introduction
+I recently embarked on a journey to learn Docker, and it has been a rewarding experience. This post compiles the essential Docker commands I’ve learned so far, along with brief descriptions for each. You can also check out my detailed learning journey on Hashnode here.
+
+What is Docker?
+Docker is an open-source platform that allows developers to automate the deployment of applications inside lightweight, portable containers. These containers package the application and its dependencies, ensuring consistency across different environments.
+
+Essential Docker Commands
+Here’s a list of essential Docker commands that I’ve found useful:
+
+Docker Container Commands
+docker run
+Spin up a new container from an image.
+
+docker ps
+List all active containers.
+
+docker ps -a
+List all containers, including stopped ones.
+
+docker stop <container_id>
+Halt a running container.
+
+docker start <container_id>
+Start a stopped container.
+
+docker restart <container_id>
+Restart a running or stopped container.
+
+docker rm <container_id>
+Delete a container.
+
+docker exec -it <container_id> /bin/bash
+Access the terminal of a running container.
+
+Docker Image Commands
+docker images
+List all Docker images on your local machine.
+
+docker rmi <image_id>
+Remove a Docker image.
+
+docker build -t <image_name>:<tag> .
+Create a new image from a Dockerfile in the current directory.
+
+docker pull <image_name>
+Download an image from Docker Hub.
+
+docker push <image_name>:<tag>
+Upload an image to Docker Hub.
+
+Docker Volume Commands
+docker volume create <volume_name>
+Create a new Docker volume.
+
+docker volume ls
+List all Docker volumes.
+
+docker volume rm <volume_name>
+Remove a Docker volume.
+
+Docker Networking Commands
+docker network ls
+List all Docker networks.
+
+docker network create <network_name>
+Create a new Docker network.
+
+docker network rm <network_name>
+Remove a Docker network.
+
+Docker Compose Commands (if applicable)
+If you are using Docker Compose, here are some useful commands:
+
+docker-compose up
+Start services defined in the docker-compose.yml file.
+
+docker-compose down
+Stop and remove all containers defined in the docker-compose.yml file.
+
+docker-compose logs
+View logs from services defined in the docker-compose.yml file.
+
+Conclusion
+Learning Docker has been a valuable experience, equipping me with skills to efficiently manage applications and their environments. This list of commands will serve as a handy reference as I continue to explore Docker. For a deeper dive into my learning journey and troubleshooting experiences, visit my post on Hashnode https://devops-docker.hashnode.dev/my-docker-learning-journey-the-ups-downs-and-fixing-an-apache-issue.
